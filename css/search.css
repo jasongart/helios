@@ -1,0 +1,139 @@
+section.searchbar{
+  width:100%;
+  max-width: 950px;
+  height:290px;
+  outline: 1px solid red;
+  margin:50px auto 50px;
+  padding:20px;
+}
+
+@media only screen and (min-width:825px)
+{
+ section.searchbar{
+  height:250px;
+  }
+}
+
+section.searchbar .formHead{
+  width:100%;
+  margin:0px auto 50px;
+  text-align: center;
+  font-family: source sans pro, arial, sans-serif;
+  color:white;
+}
+
+section.search{
+  height:100%;
+  min-height:1300px;
+background-color:#ff9000;
+}
+
+.formHead h3{
+font-weight: 700;
+font-size: 60px;
+font-family:Markazi text, georgia, serif;
+line-height:.95em;
+}
+
+section.search h4{
+font-weight: 300;
+}
+
+form.search{
+  margin:0px auto 50px;
+  outline: 1px solid red;
+}
+
+section.searchPanels{
+  height:100%;
+  min-height:2250px;
+background-color:#ff9000;
+}
+
+@media only screen and (max-width:991px)
+{
+section.search{
+ min-height:2400px;
+}
+
+}
+
+@media only screen and (max-width:767px)
+{
+section.search{
+ min-height:4350px;
+}
+
+}
+
+@media only screen and (max-width:430px)
+{
+section.search{
+ min-height:4400px;
+}
+
+.formHead h3{
+font-size: 44px;
+}
+
+section.searchbar{
+  height:350px;
+
+}
+
+}
+
+@media only screen and (max-width:312px)
+{
+section.search{
+ min-height:4900px;
+}
+
+}
+
+.container{
+  margin:30px auto;
+
+}
+
+
+.item{
+  outline: 1px solid red;
+  padding:10px;
+
+}
+
+.item.card{
+  width:100%;
+  padding:0;
+  font-family:source sans pro, arial, sans-serif;
+}
+
+img.card-img-top{width:100%; height:150px; background-color:lightgray;}
+
+nav.pagination{
+  outline: 1px solid red;
+  height:50px;
+  width:100%;
+  max-width:1150px;
+  margin:0 auto;
+}
+
+
+@media only screen and (max-width:991px)
+{
+nav.pagination{
+ max-width:725px;
+
+}
+
+}
+
+@media only screen and (max-width:767px)
+{
+nav.pagination{
+ max-width:550px;
+
+}
+
+}

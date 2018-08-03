@@ -1,0 +1,188 @@
+body, html{
+  height:100%;
+  margin: 0;
+   padding: 0;
+}
+
+.wrap{
+width: 100%;
+  height:100%;
+  background-color: orange;
+  outline: 5px solid green;
+position:relative;
+}
+
+/* ====== TOP NAV ======== */
+
+.topNav{
+  background-color: white;
+  width:100%;
+  min-height: 100px;
+  padding:20px;
+
+}
+
+.navWrap{
+  width:100%;
+  height:50px;
+  margin:0 auto;
+  max-width:1300px;
+  position:relative;
+}
+
+@media only screen and (max-width:600px){
+.topNav{
+  transition:.3s;
+  min-height: 75px;
+  padding:5px;
+
+}
+}
+
+.logo{
+  width:65px;
+  height:65px;
+  float: left;
+  color:white;
+  transition:.3s;
+  border:7px solid orange;
+  border-radius:50%;
+  text-align:center;
+  position:relative;
+  top:-5px;
+  }
+
+  .logoTitle{
+  float: left;
+  color:white;
+  transition:.3s;
+  position:relative;
+  top:5px;
+  left:65px;
+  }
+
+.logo:hover{cursor:pointer;}
+
+.logo h4{
+  font-family:roboto slab,arial, sans serif;
+  font-weight:600;
+  margin:7% 5%;
+  font-size:23px;
+  letter-spacing:1px;
+  transition:.3s;
+  color:gray;
+}
+
+.logo h4 a{
+
+  transition:.3s;
+  color:gray;
+  position:absolute;
+  top:22%;
+  left:20%
+}
+
+.logo:hover h4 a{
+  text-decoration:none;
+  color:black;
+}
+
+@media only screen and (max-width: 475px){
+ .logo{
+   margin:7px;
+   width:55px;
+   height:55px;
+}
+
+.logo h4 a{
+  font-family:roboto slab,arial, sans serif;
+  margin:5% 3%;
+  font-size:17px;
+}
+}
+
+
+#menuRight{
+  float: right;
+  display: block;
+  height:65px;
+  width:80%;
+}
+
+#menuRight ul{
+  height:65px;
+  position:absolute;
+  right:0px;
+
+}
+#menuRight ul li{
+  display: inline;
+  padding: 20px 5px;
+  position:relative;
+  top:18px;
+  height:65px;
+  margin:10px 15px 10px 15px;
+
+}
+
+#menuRight ul li.icon{
+  margin:10px 4px 10px 4px;
+
+}
+
+.fa.fa-linkedin{margin-left:10px;}
+
+@media only screen and (max-width:850px){
+  #menuRight ul li{
+  margin:10px 10px 10px 10px;
+
+}
+ #menuRight ul{
+
+
+  padding:0;
+
+
+}
+
+}
+
+
+#menuRight ul li a{
+  color: gray;
+  height:65px;
+  font-size:20px;
+  text-decoration: none;
+  }
+
+#menuRight ul li a.notIcon{
+font-family:roboto, arial, sans-serif;
+  font-weight:300;
+  }
+
+#menuRight ul li a:hover{
+  color: black;
+
+}
+#menuRight ul li a:active{
+  color: darkorange;
+  border-bottom:1px solid white;
+}
+
+/* ====== CONTENT ======== */
+
+
+section{
+  outline: 1px solid red;
+  height:100%;
+  min-height: 700px;
+  width: 100%;
+}
+
+footer{
+  outline: 1px solid red;
+  height:125px;
+  width: 100%;
+  position:absolute;
+  bottom:0;
+}
