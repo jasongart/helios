@@ -24,7 +24,7 @@ section.searchbar .formHead{
 
 section.search{
   height:100%;
-  min-height:1300px;
+  min-height:1335px;
 background-color:#ff9000;
 }
 
@@ -83,11 +83,13 @@ section.searchbar{
 
 }
 
-@media only screen and (max-width:312px)
+@media only screen and (max-width:378px)
 {
 section.search{
- min-height:4900px;
+ min-height:4650px;
 }
+
+
 
 }
 
@@ -98,7 +100,7 @@ section.search{
 
 
 .item{
-  outline: 1px solid red;
+  outline: 0px solid red;
   padding:10px;
 
 }
@@ -112,12 +114,41 @@ section.search{
 img.card-img-top{width:100%; height:150px; background-color:lightgray;}
 
 nav.pagination{
-  outline: 1px solid red;
   height:50px;
   width:100%;
-  max-width:1150px;
+  max-width:970px;
   margin:0 auto;
 }
+
+.item.card{
+  background-color:rgba(232,93,28,.75);
+  color:white;
+  border:none;
+}
+
+.btn.product{background-color:#007FEA;
+color:white;}
+
+.card-title{font-size:24px; font-weight:700;}
+
+nav.pagination{padding:10px; }
+
+li.page-item{}
+
+ul.pagination li.page-item a.page-link{
+  background-color:rgba(232,93,28,.75);
+border:0px solid white;
+border-radius:7px;
+margin:.5px 2.5px; color:white;
+}
+
+ul.pagination li.page-item a.page-link:hover{
+  background-color:white;
+  color:#007FEA;}
+
+ul.pagination li.page-item a.page-link.active{
+  background-color:white;
+  color:#007FEA;}
 
 
 @media only screen and (max-width:991px)
