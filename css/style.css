@@ -100,10 +100,12 @@ top:7px;
 
 #monthlyOption{
   background-color:#E85D1C;
+  transition:.4s;
 }
 
 #cashOption{
   float:right;
+  transition:.4s;
 }
 
 section.calc{
