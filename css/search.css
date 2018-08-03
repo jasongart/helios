@@ -3,9 +3,14 @@ section.searchbar{
   max-width: 950px;
   height:290px;
   outline: 1px solid red;
-  margin:50px auto 50px;
+  margin:30px auto 25px;
   padding:20px;
+  background-color:#ff9000;
+
 }
+
+
+
 
 @media only screen and (min-width:825px)
 {
@@ -24,7 +29,8 @@ section.searchbar .formHead{
 
 section.search{
   height:100%;
-  min-height:1400px;
+  min-height:1440px;
+  padding-top:10px;
 background-color:#ff9000;
 }
 
@@ -56,7 +62,7 @@ background-color:#ff9000;
 @media only screen and (max-width:991px)
 {
 section.search{
- min-height:2400px;
+ min-height:2430px;
 }
 
 }
@@ -64,7 +70,7 @@ section.search{
 @media only screen and (max-width:767px)
 {
 section.search{
- min-height:4350px;
+ min-height:4380px;
 }
 
 }
@@ -81,19 +87,31 @@ font-size: 44px;
 
 section.searchbar{
   height:350px;
+  margin-bottom:-5px;
 
 }
 
 }
+
+@media only screen and (max-width:411px){
+section.search{
+ min-height:4665px;
+}
+}
+
 
 @media only screen and (max-width:378px)
 {
 section.search{
- min-height:4650px;
+ min-height:4670px;
+}
 }
 
-
-
+@media only screen and (max-width:346px)
+{
+form.search{
+ margin-top:-20px;
+}
 }
 
 .container{
@@ -124,7 +142,14 @@ nav.pagination{
 }
 
 .item.card{
-  background-color:rgba(232,93,28,.75);
+  background-color:rgba(232,93,28,.7);
+  color:white;
+  border:none;
+  transition:.3s;
+}
+
+.item.card:hover{
+  background-color:rgba(232,93,28,1);
   color:white;
   border:none;
 }
@@ -150,9 +175,10 @@ margin:.5px 2.5px; color:white;
 transition:.3s;
 }
 
+
+
 ul.pagination li.page-item a.page-link:hover{
-  background-color:white;
-  color:#007FEA;}
+  background-color:rgba(232,93,28,1);}
 
 ul.pagination li.page-item a.page-link.active{
   background-color:white;
@@ -180,7 +206,7 @@ nav.pagination{
 @media only screen and (min-width:1200px)
 {
 section.search{
- min-height:1250px;
+ min-height:1300px;
 }
 
 nav.pagination{

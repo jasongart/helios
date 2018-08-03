@@ -11,6 +11,8 @@ height:100%;
   background-color:#ff9000;
 }
 
+a {transition:.2s;}
+
 /* ====== TOP NAV ======== */
 
 .navWrap{
@@ -28,8 +30,8 @@ background-color:white;
 }
 
 .logo{
-  width:100px;
-  height:100px;
+  width:90px;
+  height:90px;
 }
 
 .logoType{
@@ -109,7 +111,7 @@ top:7px;
 
 section.calc{
 background-color:#ff9000;
-  height:705px;
+  height:745px;
   padding:0px;
 
 }
@@ -253,12 +255,14 @@ span.sliderTitle{
 .total h4{
   font-family: source sans pro,arial,sans-serif;
   font-weight:300;
+  margin-top:50px;
 }
 
 .total h2{
   font-family: Markazi text, georgia, serif;
   font-weight:600;
   font-size: 60px;
+  margin-top:-45px;
 }
 
 span.dollarsign{font-size: 110px;}
@@ -271,19 +275,34 @@ span.dollarsign{font-size: 110px;}
 
 @media only screen and (max-width:620px)
 {
+
 .payment{clear:both;margin-bottom:550px;}
 span.paymentType{width:100%;}
 h1.calcHead{font-size:48px; padding:15px; line-height:1em;}
 .sliderholder.left{ width:100%; float:none;}
-section.calc{ height:100%; min-height:1025px;}
+section.calc{ height:100%; min-height:1050px;}
 #cashOption {position:relative; left:5px;}
 #monthlyOption {position:relative; left:-5px;}
 
-.total h4{position:relative; top:20px; font-size:36px;}
-.total h2, .total h2 span#grandTotal {font-size:80px; position:relative; left:0px;}
-span.dollarsign{font-size: 80px;margin-right:10px;}
+.total h4{position:relative; top:-20px; font-size:36px;}
+.total h2, .total h2 span#grandTotal {font-size:80px; position:relative; left:0px; top:-5px; font-size: 100px;}
+span.dollarsign{font-size: 100px;margin-right:10px; position:relative; left:0px; top:-5px;}
 .sliderTitle{font-size:20px; line-height:1.2em;}
 .paymentType{font-size:22px; line-height:1.2em;}
+}
+
+@media only screen and (max-width:420px)
+{
+.total h4{position:relative; top:-20px; font-size:32px;}
+.total h2, .total h2 span#grandTotal { position:relative; left:-6px; top:0px; font-size: 80px;}
+span.dollarsign{font-size: 80px;margin-right:10px; position:relative; left:0px; top:0px;}
+}
+
+@media only screen and (max-width:350px)
+{
+.total h4{position:relative; top:-20px; font-size:30px;}
+.total h2, .total h2 span#grandTotal { position:relative; left:-6px; top:7px; font-size: 68px;}
+span.dollarsign{font-size: 68px;margin-right:10px; position:relative; left:0px; top:7px;}
 }
 
 /* ====== NEXT STEPS CONTENT ======== */
@@ -291,7 +310,6 @@ span.dollarsign{font-size: 80px;margin-right:10px;}
 section.nextSteps{min-height: 200px; padding: 30px;
 background-color:white;
 }
-
 
 
 /* ====== ABOUT PAGE CONTENT ======== */
@@ -561,7 +579,7 @@ section.nextSteps h5{
 
  section.nextSteps{
   text-align:center;
-  height:425px;
+  height:470px;
 }
 
   .or.cta{
@@ -605,7 +623,7 @@ section.nextSteps h5{
 {
 
  section.nextSteps{
-  height:525px;
+  height:565px;
 }
 
 }
