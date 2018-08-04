@@ -2,7 +2,7 @@ section.searchbar{
   width:100%;
   max-width: 950px;
   height:290px;
-  outline: 1px solid red;
+
   margin:30px auto 25px;
   padding:20px;
   background-color:#ff9000;
@@ -47,7 +47,7 @@ font-weight: 300;
 
 form.search{
   margin:0px auto 50px;
-  outline: 1px solid red;
+
 }
 
 section.searchPanels{
@@ -121,7 +121,7 @@ form.search{
 
 
 .item{
-  outline: 0px solid red;
+
   padding:10px;
 
 }
@@ -183,6 +183,40 @@ ul.pagination li.page-item a.page-link:hover{
 ul.pagination li.page-item a.page-link.active{
   background-color:white;
   color:#007FEA;}
+
+
+.productThumb{
+    width:100%;
+    height:150px;
+  outline:0px solid;    overflow:hidden;
+}
+
+  .productImg img{
+    width:100%;
+    height:auto;
+ overflow:hidden;
+       }
+
+
+
+
+
+  .productImg .card-img-top.productImg{
+       overflow:hidden;
+    opacity:1;
+ background-color: #212529;
+  transition:.5s;
+ background: linear-gradient(180deg,
+        rgba(100, 0, 0, 1) 0%,
+        rgba(255, 20, 20, 1) 100%);
+
+   }
+
+   .card-img-top.productImg:hover{
+   transform:scale(1.05,1.05);
+   opacity:.9;
+   cursor:pointer;
+  }
 
 
 @media only screen and (max-width:991px)

@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123349237-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123349237-1');
+</script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Helios</title>
 
@@ -18,6 +29,18 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/slider.css">
 <link rel="stylesheet" type="text/css" href="css/search.css">
+
+<!-- Hotjar Tracking Code for https://jasongart.github.io/helios -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:970407,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
 
   </head>
 
@@ -68,15 +91,19 @@
 
 <section class="firstSteps">
   <h1 class="calcHead">See how you can save when you switch to solar</h1>
-</section>
+
+  </section>
 
 <section class="calc">
 
 
 
 <!-- RADIO BUTTONS -->
+
+
   <div class="calcContain">
-<div class="payment">
+
+<div class="payment"><h4 class="steps">Step 1:<br><span class="sliderTitle">Choose a Payment Method</span></h4>
 <div class="paymentMethod">
   <div class="paymentTypeContain">
 
@@ -92,20 +119,51 @@ Cash Option<br>(Most efficient ROI)<br><input type="radio" name="payment" value=
 <!-- SLIDERS -->
 <div class="sliders">
 <div class="sliderholder left">
-  <div class="slideContainer">
+  <div class="slideContainer"><h4 class="calcHead steps">Step 2:</h4>
     <span class="sliderTitle">WHAT IS YOUR MONTHLY ELECTRIC BILL NOW?</span>
-    <input type="range" min="100" max="500" value="0" class="slider" id="billAmt">
+    <input type="range" min="100" max="600" value="0" class="slider" id="billAmt">
 
   </div>
+  <div class="ticksContain">
 
+    <div class="tickContain"><div class="tick"></div><span class="years">$100</span></div>
+
+    <div class="tickContain"><div class="tick"></div><span class="years">$200</span></div>
+
+    <div class="tickContain"><div class="tick"></div><span class="years">$300</span></div>
+
+    <div class="tickContain"><div class="tick"></div><span class="years">$400</span></div>
+
+    <div class="tickContain"><div class="tick"></div><span class="years">$500</span></div>
+
+    <div class="tickContain"><div class="tick"></div><span class="years">$600</span></div>
+
+  </div>
   <p class="demo">Total Value: <span id="demo"></span></p>
 </div>
 
 <div class="sliderholder right">
-  <div class="slideContainer">
+  <div class="slideContainer"><h4 class="calcHead steps">Step 3:</h4>
     <span class="sliderTitle">SEE YOUR SAVINGS OVER TIME.</span>
-  <input type="range" min="12" max="300" value="0" class="slider" id="yearRange">
+  <input type="range" min="60" max="360" value="0" class="slider" id="yearRange">
 </div>
+
+<div class="ticksContain">
+
+  <div class="tickContain"><div class="tick"></div><span class="years">5 Years</span></div>
+
+  <div class="tickContain"><div class="tick"></div><span class="years">10 Years</span></div>
+
+  <div class="tickContain"><div class="tick"></div><span class="years">15 Years</span></div>
+
+  <div class="tickContain"><div class="tick"></div><span class="years">20 Years</span></div>
+
+  <div class="tickContain"><div class="tick"></div><span class="years">25 Years</span></div>
+
+  <div class="tickContain"><div class="tick"></div><span class="years">30 Years</span></div>
+
+</div>
+
 <p class="demo">Total Value: <span id="demo2"></span></p>
 </div>
 </div>

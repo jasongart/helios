@@ -46,7 +46,7 @@ yearRange.oninput = function() {
 
   function calculateGrandTotal(){
 if (document.getElementById("cash").checked==true){
-  var grandCashTotal = slider.value * yearRange.value * 10;
+  var grandCashTotal = slider.value * yearRange.value * 3; //try to make 1.7 work
   total.innerHTML = grandCashTotal;
     console.log("grand total")
 }
@@ -64,7 +64,7 @@ function showCash(){
   if (cash.checked==true){
       cashOption.style.backgroundColor="#E85D1C";
       monthlyOption.style.backgroundColor="#ff9000";
-      var grandCashTotal = slider.value * yearRange.value * 10;
+      var grandCashTotal = slider.value * yearRange.value * 3; //try to make 1.7 work
       total.innerHTML = grandCashTotal;
     }
 
