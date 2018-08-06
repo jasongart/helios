@@ -4,11 +4,11 @@ body, html{
    padding: 0;
 }
 
+
 .wrap{
 width: 100%;
 height:100%;
 
-  background-color:#ff9000;
 }
 
 a {transition:.2s;}
@@ -93,14 +93,203 @@ top:7px;
 
 /* ====== CALC CONTENT ======== */
 
-.firstSteps{ background-color: #FF9000;
+section.firstSteps{ color:white;
+padding:20px;
+  height:100%;
+  margin-bottom:-35px;
+ }
 
-  /*
+ section.firstSteps h1{ color:white;
+ width:90%;
+ max-width:1100px;
+ line-height:1em;
+ letter-spacing:1px;
+ font-size:90px;
+ margin:50px auto 20px;
+ font-family:markazi text, georgia, serif;
+ /*
   height:250px; */
  }
 
-#monthlyOption{
+
+ section.firstSteps h2{ color:white;
+width:90%;
+max-width:1000px;
+line-height:1.5em;
+letter-spacing:1px;
+font-size:48px;
+margin:10px auto 70px;
+font-family:source sans pro,arial, sans-serif;
+ /*
+  height:250px; */
+ }
+
+@media only screen and (max-width:800px)
+{
+
+ section.firstSteps h1{ color:white;
+  line-height:1em;
+ letter-spacing:1px;
+ font-size:70px;
+ margin:30px auto 10px;
+ font-family:markazi text, georgia, serif;
+ /*
+  height:250px; */
+ }
+
+
+ section.firstSteps h2{ color:white;
+width:90%;
+max-width:1000px;
+line-height:1.25em;
+letter-spacing:1px;
+font-size:44px;
+margin:10px auto 70px;
+ /*
+  height:250px; */
+ }
+
+}
+
+@media only screen and (max-width:550px)
+{
+
+ section.firstSteps h1{ color:white;
+  line-height:1em;
+ letter-spacing:0px;
+ font-size:60px;
+ margin:20px auto 5px;
+ font-family:markazi text, georgia, serif;
+ /*
+  height:250px; */
+ }
+
+
+ section.firstSteps h2{ color:white;
+width:95%;
+line-height:1.1em;
+letter-spacing:1px;
+font-size:40px;
+margin:10px auto 70px;
+ /*
+  height:250px; */
+ }
+
+}
+
+@media only screen and (max-width:450px)
+{
+
+ section.firstSteps h1{ color:white;
+  line-height:1em;
+ letter-spacing:0px;
+ font-size:44px;
+ margin:20px auto 5px;
+ font-family:markazi text, georgia, serif;
+ /*
+  height:250px; */
+ }
+
+
+ section.firstSteps h2{ color:white;
+width:95%;
+line-height:1em;
+letter-spacing:1px;
+font-size:32px;
+margin:10px auto 70px;
+ /*
+  height:250px; */
+ }
+
+}
+
+@media only screen and (max-width:350px)
+{
+
+ section.firstSteps h1{ color:white;
+  line-height:1em;
+ letter-spacing:0px;
+ font-size:40px;
+ margin:20px auto 5px;
+ font-family:markazi text, georgia, serif;
+ /*
+  height:250px; */
+ }
+
+
+ section.firstSteps h2{ color:white;
+width:95%;
+line-height:1em;
+letter-spacing:1px;
+font-size:26px;
+margin:10px auto 70px;
+ /*
+  height:250px; */
+ }
+
+}
+
+ section.firstSteps h2 a{
+background-color:white;
+padding: 2px;
+ /*
+  height:250px; */
+ }
+
+
+
+ section.firstSteps h2 a:hover{
+color:#ff9000;
+text-decoration: none;
+ /*
+  height:250px; */
+ }
+
+ a.homeCTA{ color:white;
+display:block;
+background-color:#f99000;
+text-align:center;
+width:200px;
+margin:0 auto;
+font-size:24px;
+padding:15px 8px 8px 8px;
+border-radius:5px;
+font-family:source sans pro,arial, sans-serif;
+ /*
+  height:250px; */
+ }
+
+ a.homeCTA:hover{
   background-color:#E85D1C;
+text-decoration: none;
+ }
+
+ a.homeCTA i.fas{
+ font-size: 20px;
+  /*
+   height:250px; */
+  }
+
+
+@media only screen and (max-width:500px)
+{
+   a.homeCTA{ color:white;
+display:block;
+background-color:#f99000;
+text-align:center;
+width:200px;
+margin:0 auto;
+font-size:24px;
+padding:10px 4px 0px 4px;
+border-radius:5px;
+font-family:source sans pro,arial, sans-serif;
+ /*
+  height:250px; */
+ }
+}
+
+#monthlyOption{
+  background-color:#ff9000;
   transition:.4s;
 }
 
@@ -110,8 +299,8 @@ top:7px;
 }
 
 section.calc{
-background-color:#ff9000;
-  height:825px;
+background-color:#E85D1C;
+  height:1000px;
   padding:0px;
 
 }
@@ -284,7 +473,7 @@ span.dollarsign{font-size: 110px;}
 span.paymentType{width:100%;}
 h1.calcHead{font-size:48px; padding:15px; line-height:1em;}
 .sliderholder.left{ width:100%; float:none;}
-section.calc{ height:100%; min-height:1210px;}
+section.calc{ height:100%; min-height:1360px;}
 #cashOption {position:relative; left:5px;}
 #monthlyOption {position:relative; left:-5px;}
 
@@ -657,7 +846,8 @@ background-blend-mode:multiply;
 
 footer h3{
 margin-bottom:20px;
-font-size:60px;
+font-size:70px;
+font-family: markazi text, georgia,serif;
 text-transform:uppercase;
 font-weight:900;
 color:#ff9000;
@@ -689,6 +879,9 @@ color:orange;
 footer p{
   margin-top:50px;
 }
+
+footer p a.fa{color:white; padding:20px; font-size:36px;}
+footer p a.fa:hover{color:#ff9000; text-decoration:none;}
 
 @media only screen and (max-width:1040px)
 {

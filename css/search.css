@@ -10,6 +10,10 @@ section.searchbar{
 }
 
 
+.item.col-lg-3.col-md-6.solarProduct.card,
+.item.col-lg-3.col-md-6.panel.card{
+  border:5px solid #ff9000;
+}
 
 
 @media only screen and (min-width:825px)
@@ -62,7 +66,9 @@ background-color:#ff9000;
 @media only screen and (max-width:991px)
 {
 section.search{
- min-height:2430px;
+ /*min-height:2430px;*/
+ height:auto;
+ padding-bottom:50px;
 }
 
 }
@@ -70,7 +76,8 @@ section.search{
 @media only screen and (max-width:767px)
 {
 section.search{
- min-height:4380px;
+ height:auto;
+ padding-bottom:50px;
 }
 
 }
@@ -78,7 +85,9 @@ section.search{
 @media only screen and (max-width:430px)
 {
 section.search{
- min-height:4400px;
+ /*min-height:4400px;*/
+ height:auto;
+ padding-bottom:50px;
 }
 
 .formHead h3{
@@ -95,7 +104,9 @@ section.searchbar{
 
 @media only screen and (max-width:411px){
 section.search{
- min-height:4665px;
+ /*min-height:4665px;*/
+ height:auto;
+ padding-bottom:50px;
 }
 }
 
@@ -103,7 +114,9 @@ section.search{
 @media only screen and (max-width:378px)
 {
 section.search{
- min-height:4670px;
+ /*min-height:4670px;*/
+ height:auto;
+ padding-bottom:50px;
 }
 }
 
@@ -206,10 +219,6 @@ ul.pagination li.page-item a.page-link.active{
     opacity:1;
  background-color: #212529;
   transition:.5s;
- background: linear-gradient(180deg,
-        rgba(100, 0, 0, 1) 0%,
-        rgba(255, 20, 20, 1) 100%);
-
    }
 
    .card-img-top.productImg:hover{

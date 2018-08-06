@@ -69,7 +69,7 @@
           <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
-      <div id="navCTA"><a href="index.html">See Your Solar Savings Here</a>
+      <div id="navCTA"><a href="index.html#calc">Calculate Your Solar Savings</a>
       </div>
     </div>
 
@@ -94,10 +94,10 @@
 
       <div class="col-auto my-1">
         <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-          <option selected>Search all items</option>
-          <option value="1">Solar Panels</option>
-          <option value="2">Energy Efficient Products</option>
+        <select class="custom-select mr-sm-2 productFilter" id="inlineFormCustomSelect" onchange="productFilter()">
+          <option selected value="all">Search all items</option>
+          <option value="panels">Solar Panels</option>
+          <option value="products">Energy Efficient Products</option>
         </select>
       </div>
 
@@ -108,11 +108,15 @@
   </form>
 </section>
 
+<!-- CARDS START -->
+
 <section class="search">
   <div class="container">
     <div class="row">
-      <div class="item col-lg-3 col-md-6">
-        <div class="item card" >
+
+<!-- CARD -->
+      <div class="item col-lg-3 col-md-6 solarProduct card">
+        <div class="item" >
 
   <div class="productThumb">
   <div class="productImg">
@@ -121,148 +125,178 @@
   <div class="card-body">
     <h5 class="card-title">Product</h5>
     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
-    <a href="#" class="btn product">Add to cart</a>
+    <a href="#" class="btn product">Learn More</a>
   </div>
 </div>
       </div>
-      <div class="item col-lg-3 col-md-6">
-        <div class="item card" >
+
+<!-- CARD -->
+
+      <div class="item col-lg-3 col-md-6 panel card">
+        <div class="item" >
   <div class="productThumb"> <div class="productImg">
     <img class="card-img-top productImg" src="images/products/panel1.jpg" alt="Card image cap">
 </div></div>
   <div class="card-body">
     <h5 class="card-title">Panels</h5>
     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
-    <a href="#" class="btn product">Add to cart</a>
+    <a href="#" class="btn product">Learn More</a>
   </div>
 </div>
       </div>
-      <div class="item col-lg-3 col-md-6">
-        <div class="item card" >
+
+<!-- CARD -->
+
+      <div class="item col-lg-3 col-md-6 solarProduct card">
+        <div class="item" >
 <div class="productThumb">  <div class="productImg">
     <img class="card-img-top productImg" src="images/products/product2.jpg" alt="Card image cap">
 </div></div>
   <div class="card-body">
     <h5 class="card-title">Product</h5>
     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
-    <a href="#" class="btn product">Add to cart</a>
+    <a href="#" class="btn product">Learn More</a>
   </div>
 </div>
       </div>
-      <div class="item col-lg-3 col-md-6">
-        <div class="item card" >
+
+<!-- CARD -->
+
+
+      <div class="item col-lg-3 col-md-6 solarProduct card">
+        <div class="item" >
           <div class="productThumb"> <div class="productImg">
     <img class="card-img-top productImg" src="images/products/product3.jpg" alt="Card image cap">
 </div></div>
   <div class="card-body">
     <h5 class="card-title">Product</h5>
     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
-    <a href="#" class="btn product">Add to cart</a>
+    <a href="#" class="btn product">Learn More</a>
   </div>
 </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="item col-lg-3 col-md-6">
-        <div class="item card" >
+<!-- CARD -->
+
+      <div class="item col-lg-3 col-md-6 panel card">
+        <div class="item" >
           <div class="productThumb"> <div class="productImg">
       <img class="card-img-top productImg" src="images/products/panel2.jpg" alt="Card image cap">
 </div></div>
     <div class="card-body">
     <h5 class="card-title">Panels</h5>
     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
-    <a href="#" class="btn product">Add to cart</a>
+    <a href="#" class="btn product">Learn More</a>
     </div>
     </div>
       </div>
-      <div class="item col-lg-3 col-md-6">
-        <div class="item card" >
+
+<!-- CARD -->
+
+      <div class="item col-lg-3 col-md-6 panel card">
+        <div class="item card " >
           <div class="productThumb"> <div class="productImg">
       <img class="card-img-top productImg" src="images/products/panel3.jpg" alt="Card image cap">
 </div></div>
     <div class="card-body">
     <h5 class="card-title">Panels</h5>
     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
-    <a href="#" class="btn product">Add to cart</a>
+    <a href="#" class="btn product">Learn More</a>
     </div>
     </div>
       </div>
-      <div class="item col-lg-3 col-md-6">
-        <div class="item card" >
+
+<!-- CARD -->
+
+      <div class="item col-lg-3 col-md-6 solarProduct card">
+        <div class="item card " >
           <div class="productThumb"> <div class="productImg">
       <img class="card-img-top productImg" src="images/products/product4.jpg" alt="Card image cap">
 </div></div>
     <div class="card-body">
     <h5 class="card-title">Product</h5>
     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
-    <a href="#" class="btn product">Add to cart</a>
+    <a href="#" class="btn product">Learn More</a>
     </div>
     </div>
       </div>
-      <div class="item col-lg-3 col-md-6">
-        <div class="item card" >
+
+<!-- CARD -->
+      <div class="item col-lg-3 col-md-6 panel card">
+        <div class="item card " >
           <div class="productThumb"> <div class="productImg">
       <img class="card-img-top productImg" src="images/products/panel4.jpg" alt="Card image cap">
 </div></div>
     <div class="card-body">
     <h5 class="card-title">Panels</h5>
     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
-    <a href="#" class="btn product">Add to cart</a>
+    <a href="#" class="btn product">Learn More</a>
     </div>
     </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="item col-lg-3 col-md-6">
-        <div class="item card" >
+<!-- CARD -->
+
+      <div class="item col-lg-3 col-md-6 panel card">
+        <div class="item" >
           <div class="productThumb"> <div class="productImg">
     <img class="card-img-top productImg" src="images/products/panel5.jpg" alt="Card image cap">
 </div></div>
   <div class="card-body">
     <h5 class="card-title">Panels</h5>
     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
-    <a href="#" class="btn product">Add to cart</a>
+    <a href="#" class="btn product">Learn More</a>
   </div>
 </div>
       </div>
-      <div class="item col-lg-3 col-md-6">
-        <div class="item card" >
+
+<!-- CARD -->
+
+      <div class="item col-lg-3 col-md-6 panel card">
+        <div class="item"  >
           <div class="productThumb"> <div class="productImg">
     <img class="card-img-top productImg" src="images/products/panel6.jpg" alt="Card image cap">
 </div></div>
   <div class="card-body">
     <h5 class="card-title">Panels</h5>
     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
-    <a href="#" class="btn product">Add to cart</a>
+    <a href="#" class="btn product">Learn More</a>
   </div>
 </div>
       </div>
-      <div class="item col-lg-3 col-md-6">
-        <div class="item card" >
+
+<!-- CARD -->
+
+
+      <div class="item col-lg-3 col-md-6 solarProduct card">
+        <div class="item" >
           <div class="productThumb"> <div class="productImg">
     <img class="card-img-top productImg" src="images/products/product5.png" alt="Card image cap">
 </div></div>
   <div class="card-body">
     <h5 class="card-title">Product</h5>
     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
-    <a href="#" class="btn product">Add to cart</a>
+    <a href="#" class="btn product">Learn More</a>
   </div>
 </div>
       </div>
-      <div class="item col-lg-3 col-md-6">
-        <div class="item card" >
+
+<!-- CARD -->
+
+      <div class="item col-lg-3 col-md-6 solarProduct card">
+        <div class="item" >
           <div class="productThumb"> <div class="productImg">
   <img class="card-img-top productImg" src="images/products/product6.jpg" alt="Card image cap">
 </div></div>
   <div class="card-body">
     <h5 class="card-title">Product</h5>
     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
-    <a href="#" class="btn product">Add to cart</a>
+    <a href="#" class="btn product">Learn More</a>
   </div>
 </div>
       </div>
+
+<!-- CARDS END -->
     </div>
 
 
@@ -292,6 +326,7 @@
   <li><a><a href="mailto:info@helios.com">info@helios.com</a></li>
   <li>123 Main Street, Anytown, CA 91234</li>
   </ul>
+  <p class="socialMedia"><a class="fa fa-facebook" href="#"></a> <a class="fa fa-twitter" href="#"></a> <a class="fa fa-instagram" href="#"></a></p>
   </div>
 
   <p>&copy; 2018 Helios. All rights reserved</p>
@@ -313,6 +348,46 @@
   <script src="js/smoothscroll.js"></script>
 
 
+<script>
 
+function productFilter(){
+  var productFilter = document.getElementById("inlineFormCustomSelect").value;
+  var panel = document.getElementsByClassName("panel");
+  var product = document.getElementsByClassName("solarProduct");
+  var card = document.getElementsByClassName("card");
+
+  if(productFilter == "panels"){
+    for (i=0; i<panel.length; i++){
+    panel[i].style.display = 'block';
+    product[i].style.display = 'none';
+  };
+};
+  if(productFilter == "products"){
+    for (i=0; i<product.length; i++){
+    panel[i].style.display = 'none';
+    product[i].style.display = 'block';
+  };
+};
+  if(productFilter == "all"){
+for (i=0; i<card.length; i++){
+    card[i].style.display = 'block';
+  };
+};
+}
+
+// $(document).ready(function() {
+//   $('input').change(function() {
+//     var filter = $(this).val();
+//     $('option').each(function() {
+//       if ($(this).val() == filter) {
+//         $(this).show();
+//       } else {
+//         $(this).hide();
+//       }
+//       $('select').val(filter);
+//     })
+//   })
+// })
+</script>
 
 </html>

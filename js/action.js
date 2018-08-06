@@ -46,7 +46,7 @@ yearRange.oninput = function() {
 
   function calculateGrandTotal(){
 if (document.getElementById("cash").checked==true){
-  var grandCashTotal = slider.value * yearRange.value * 3; //try to make 1.7 work
+  var grandCashTotal = Math.round(slider.value * yearRange.value * 1.7); //try to make 1.7 work
   total.innerHTML = grandCashTotal;
     console.log("grand total")
 }
@@ -62,15 +62,15 @@ else{
 
 function showCash(){
   if (cash.checked==true){
-      cashOption.style.backgroundColor="#E85D1C";
-      monthlyOption.style.backgroundColor="#ff9000";
-      var grandCashTotal = slider.value * yearRange.value * 3; //try to make 1.7 work
+      cashOption.style.backgroundColor="#ff9000";
+      monthlyOption.style.backgroundColor="#E85D1C";
+      var grandCashTotal = Math.round(slider.value * yearRange.value * 1.7); //try to make 1.7 work
       total.innerHTML = grandCashTotal;
     }
 
     if (monthly.checked==true){
-        cashOption.style.backgroundColor="#ff9000";
-        monthlyOption.style.backgroundColor="#E85D1C";
+        cashOption.style.backgroundColor="#E85D1C";
+        monthlyOption.style.backgroundColor="#ff9000";
       var grandCashTotal = slider.value * yearRange.value;
       total.innerHTML = grandCashTotal;}
     // console.log("cash radio pushed");
@@ -79,6 +79,13 @@ function showCash(){
 
 //smooth scroll to contact
 
+
+function scrollCalc() {
+    var contact = document.getElementById("calc");
+    contact.scrollIntoView({
+  behavior: 'smooth'
+});
+}
 
 function scrollContact() {
     var contact = document.getElementById("contact");

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123349237-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123349237-1');
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helios</title>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<link href="https://fonts.googleapis.com/css?family=Markazi+Text:400,500,600,700|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/slider.css">
+<link rel="stylesheet" type="text/css" href="css/search.css">
+
+<!-- Hotjar Tracking Code for https://jasongart.github.io/helios -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:970407,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+  </head>
+
+  <body>
+
+<div class="wrap">
+
+  <!-- ====== TOP NAV ======= -->
+<div class="navWrap">
+<div class="navContain">
+  <nav id="topNav" class="navbar navbar-expand-lg navbar-light">
+
+    <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.png"> <span class="logoType">Helios</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Other Reasons To Go Solar</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="search.html">Energy Product Search<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+      <div id="navCTA"><a href="index.html#calc">Calculate Your Solar Savings</a>
+      </div>
+    </div>
+
+  </nav>
+  </div>
+  </div>
+
+<!-- ====== CONTENT BEGINS ======= -->
+
+<section class="searchbar">
+  <div class="formHead">
+    <h3>Energy Efficient Product Search</h3>
+    <h4>Your source for energy efficient product information</h4>
+</div>
+  <form class="search">
+    <div class="form-row align-items-center">
+
+      <div class="col-sm-7 my-1">
+      <label class="sr-only" for="inlineFormInputName">Name</label>
+      <input type="text" class="form-control" id="inlineFormInputName" placeholder="Enter City or Zip Code">
+    </div>
+
+      <div class="col-auto my-1">
+        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+        <select class="custom-select mr-sm-2 productFilter" id="inlineFormCustomSelect" onchange="productFilter()">
+          <option selected value="all">Search all items</option>
+          <option value="panels">Solar Panels</option>
+          <option value="products">Energy Efficient Products</option>
+        </select>
+      </div>
+
+      <div class="col-auto my-1">
+        <button type="submit" class="btn product">Submit</button>
+      </div>
+    </div>
+  </form>
+</section>
+
+<!-- CARDS START -->
+
+<section class="search">
+  <div class="container">
+    <div class="row">
+
+<!-- CARD -->
+      <div class="item col-lg-3 col-md-6 solarProduct card">
+        <div class="item" >
+
+  <div class="productThumb">
+  <div class="productImg">
+    <img class="card-img-top productImg" src="images/products/product1.jpg" alt="Card image cap">
+</div></div>
+  <div class="card-body">
+    <h5 class="card-title">Product</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+    <a href="#" class="btn product">Learn More</a>
+  </div>
+</div>
+      </div>
+
+<!-- CARD -->
+
+      <div class="item col-lg-3 col-md-6 panel card">
+        <div class="item" >
+  <div class="productThumb"> <div class="productImg">
+    <img class="card-img-top productImg" src="images/products/panel1.jpg" alt="Card image cap">
+</div></div>
+  <div class="card-body">
+    <h5 class="card-title">Panels</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+    <a href="#" class="btn product">Learn More</a>
+  </div>
+</div>
+      </div>
+
+<!-- CARD -->
+
+      <div class="item col-lg-3 col-md-6 solarProduct card">
+        <div class="item" >
+<div class="productThumb">  <div class="productImg">
+    <img class="card-img-top productImg" src="images/products/product2.jpg" alt="Card image cap">
+</div></div>
+  <div class="card-body">
+    <h5 class="card-title">Product</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+    <a href="#" class="btn product">Learn More</a>
+  </div>
+</div>
+      </div>
+
+<!-- CARD -->
+
+
+      <div class="item col-lg-3 col-md-6 solarProduct card">
+        <div class="item" >
+          <div class="productThumb"> <div class="productImg">
+    <img class="card-img-top productImg" src="images/products/product3.jpg" alt="Card image cap">
+</div></div>
+  <div class="card-body">
+    <h5 class="card-title">Product</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+    <a href="#" class="btn product">Learn More</a>
+  </div>
+</div>
+      </div>
+
+<!-- CARD -->
+
+      <div class="item col-lg-3 col-md-6 panel card">
+        <div class="item" >
+          <div class="productThumb"> <div class="productImg">
+      <img class="card-img-top productImg" src="images/products/panel2.jpg" alt="Card image cap">
+</div></div>
+    <div class="card-body">
+    <h5 class="card-title">Panels</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+    <a href="#" class="btn product">Learn More</a>
+    </div>
+    </div>
+      </div>
+
+<!-- CARD -->
+
+      <div class="item col-lg-3 col-md-6 panel card">
+        <div class="item card " >
+          <div class="productThumb"> <div class="productImg">
+      <img class="card-img-top productImg" src="images/products/panel3.jpg" alt="Card image cap">
+</div></div>
+    <div class="card-body">
+    <h5 class="card-title">Panels</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+    <a href="#" class="btn product">Learn More</a>
+    </div>
+    </div>
+      </div>
+
+<!-- CARD -->
+
+      <div class="item col-lg-3 col-md-6 solarProduct card">
+        <div class="item card " >
+          <div class="productThumb"> <div class="productImg">
+      <img class="card-img-top productImg" src="images/products/product4.jpg" alt="Card image cap">
+</div></div>
+    <div class="card-body">
+    <h5 class="card-title">Product</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+    <a href="#" class="btn product">Learn More</a>
+    </div>
+    </div>
+      </div>
+
+<!-- CARD -->
+      <div class="item col-lg-3 col-md-6 panel card">
+        <div class="item card " >
+          <div class="productThumb"> <div class="productImg">
+      <img class="card-img-top productImg" src="images/products/panel4.jpg" alt="Card image cap">
+</div></div>
+    <div class="card-body">
+    <h5 class="card-title">Panels</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+    <a href="#" class="btn product">Learn More</a>
+    </div>
+    </div>
+      </div>
+
+<!-- CARD -->
+
+      <div class="item col-lg-3 col-md-6 panel card">
+        <div class="item" >
+          <div class="productThumb"> <div class="productImg">
+    <img class="card-img-top productImg" src="images/products/panel5.jpg" alt="Card image cap">
+</div></div>
+  <div class="card-body">
+    <h5 class="card-title">Panels</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+    <a href="#" class="btn product">Learn More</a>
+  </div>
+</div>
+      </div>
+
+<!-- CARD -->
+
+      <div class="item col-lg-3 col-md-6 panel card">
+        <div class="item"  >
+          <div class="productThumb"> <div class="productImg">
+    <img class="card-img-top productImg" src="images/products/panel6.jpg" alt="Card image cap">
+</div></div>
+  <div class="card-body">
+    <h5 class="card-title">Panels</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+    <a href="#" class="btn product">Learn More</a>
+  </div>
+</div>
+      </div>
+
+<!-- CARD -->
+
+
+      <div class="item col-lg-3 col-md-6 solarProduct card">
+        <div class="item" >
+          <div class="productThumb"> <div class="productImg">
+    <img class="card-img-top productImg" src="images/products/product5.png" alt="Card image cap">
+</div></div>
+  <div class="card-body">
+    <h5 class="card-title">Product</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+    <a href="#" class="btn product">Learn More</a>
+  </div>
+</div>
+      </div>
+
+<!-- CARD -->
+
+      <div class="item col-lg-3 col-md-6 solarProduct card">
+        <div class="item" >
+          <div class="productThumb"> <div class="productImg">
+  <img class="card-img-top productImg" src="images/products/product6.jpg" alt="Card image cap">
+</div></div>
+  <div class="card-body">
+    <h5 class="card-title">Product</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+    <a href="#" class="btn product">Learn More</a>
+  </div>
+</div>
+      </div>
+
+<!-- CARDS END -->
+    </div>
+
+
+  </div>
+
+<!-- PAGINATION -->
+
+<nav class="pagination" aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+
+  </section>
+
+
+  <footer id="contact" data-parallax="scroll" data-image-src="images/contact.jpg">
+  <h3>Contact</h3>
+
+  <div class="contactInfo">
+  <ul>
+  <li>Phone: 800.123.4567</li>
+  <li><a><a href="mailto:info@helios.com">info@helios.com</a></li>
+  <li>123 Main Street, Anytown, CA 91234</li>
+  </ul>
+  <p class="socialMedia"><a class="fa fa-facebook" href="#"></a> <a class="fa fa-twitter" href="#"></a> <a class="fa fa-instagram" href="#"></a></p>
+  </div>
+
+  <p>&copy; 2018 Helios. All rights reserved</p>
+  </footer>
+
+</div>
+
+  </body>
+
+  <script src="js/action.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+  <script src="js/parallax.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/smoothscroll.js"></script>
+
+
+<script>
+
+function productFilter(){
+  var productFilter = document.getElementById("inlineFormCustomSelect").value;
+  var panel = document.getElementsByClassName("panel");
+  var product = document.getElementsByClassName("solarProduct");
+  var card = document.getElementsByClassName("card");
+
+  if(productFilter == "panels"){
+    for (i=0; i<panel.length; i++){
+    panel[i].style.display = 'block';
+    product[i].style.display = 'none';
+  };
+};
+  if(productFilter == "products"){
+    for (i=0; i<product.length; i++){
+    panel[i].style.display = 'none';
+    product[i].style.display = 'block';
+  };
+};
+  if(productFilter == "all"){
+for (i=0; i<card.length; i++){
+    card[i].style.display = 'block';
+  };
+};
+}
+
+// $(document).ready(function() {
+//   $('input').change(function() {
+//     var filter = $(this).val();
+//     $('option').each(function() {
+//       if ($(this).val() == filter) {
+//         $(this).show();
+//       } else {
+//         $(this).hide();
+//       }
+//       $('select').val(filter);
+//     })
+//   })
+// })
+</script>
+
+</html>

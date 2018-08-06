@@ -1,0 +1,216 @@
+.sliders {
+margin-top:0px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    margin:20px 0;
+    border-radius:10px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.sliderholder.left{
+
+    width:45%;
+    float:left;
+}
+
+.sliderholder.right{
+
+    width:45%;
+    float:right;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    background: white;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    background: white;
+    cursor: pointer;
+}
+
+#demo, #demo2, .demo{display: none;}
+
+
+.steps, .sliderTitle{
+    width:100%;
+    text-align:center;
+    color:white;
+    line-height:1.25em;
+    margin-bottom:0px;
+    font-family:source sans pro, arial, sans-serif;
+    color:yellow;
+    font-weight:600;
+    font-size:22px;
+}
+
+
+
+.sliderTitle{
+    width:100%;
+    text-align:center;
+    color:white;
+    line-height:1.25em;
+    margin-bottom:0px;
+    font-family:source sans pro, arial, sans-serif;
+}
+
+
+
+.steps span.sliderTitle{
+    text-transform:uppercase;
+    font-weight:600;
+}
+
+
+@media only screen and (max-width:620px)
+{
+.sliderholder.left, .sliderholder.right{
+
+    width:100%;
+    float:none;
+}
+
+.sliders {
+margin-top:-125px;
+}
+}
+
+.ticksContain{
+    width:110%;
+    float:right;
+    height:20px;
+    margin:0 auto;
+    position:relative;
+    top:0px;
+    text-align:right;
+}
+
+.tickContain{
+    width:16.5%;
+    float:left;
+    height:20px;
+    margin:0 auto;
+    position:relative;
+    top:0px;
+}
+
+.tick{
+    width:4px;
+    height:12px;
+    background-color:white;
+
+    margin:0 0 0 90%;
+}
+
+.tick:last-child{
+    margin-right:20%;
+}
+
+span.years{
+    color:white;
+    position:relative;
+    left:26px;
+    display:block;
+    padding:10px;
+    line-height:1em;
+    text-align:center;
+    font-size:14px;
+
+}
+
+
+
+/* MEDIA QUERIES FOR slider titles*/
+
+@media only screen and (max-width:620px){
+ .sliderTitle{
+    margin-top:10px;
+    margin-bottom:-35px;
+}
+
+.sliderholder{
+    margin-bottom:70px;
+}
+
+@media only screen and (max-width:535px){
+ .sliderTitle{
+    margin-top:10px;
+    margin-bottom:-20px;
+}
+
+@media only screen and (max-width:331px){
+ .sliderTitle{
+    font-size:18.5px;
+}
+
+.sliderholder{
+    margin-bottom:60px;
+outline:0px solid red;}
+}
+
+/* MEDIA QUERIES FOR TICK MARKS*/
+
+@media only screen and (max-width:684px){
+ .tick{
+    margin-right:22.5%;
+}
+}
+
+@media only screen and (max-width:620px){
+ .tick{
+    margin-right:23.8%;
+}
+}
+
+@media only screen and (max-width:539px){
+ .tick{
+    margin-right:23.4%;
+}
+}
+
+@media only screen and (max-width:429px){
+ .tick{
+    margin-right:23%;
+}
+}
+
+@media only screen and (max-width:363px){
+ .tick{
+    margin-right:22.5%;
+}
+}
+
+@media only screen and (max-width:310px){
+ .tick{
+    margin-right:22.25%;
+}
+}
+
+@media only screen and (max-width:347px){
+span.years{
+    left:12px;
+padding:10px;
+font-size:12.5px;
+}
+}
