@@ -1,0 +1,24 @@
+#exampleModalLabel{
+    font-family:markazi text,georgia,serif;
+    font-size:50px;
+    font-weight:100;
+    line-height:.9em;
+    color:#E85D1C;
+}
+
+#hemail{
+    font-family:source sans pro,arial,sans-serif;
+    background-color:none;
+    background-image:url('../images/email-modal-bg.jpg');
+    background-size:cover;
+    border:10px solid white;
+    box-shadow:0 0 1000px #000
+}
+
+div.logo.emailmodal{width:100%;}
+div.logo.emailmodal img{width:160px; height:160px; position: relative; top:-15px;}
+
+#emailSubmitBtn{background-color: #ff9000;
+outline: 0px; border: 0px;}
+
+#emailSubmitBtn:hover{background-color: #e85d1c;}

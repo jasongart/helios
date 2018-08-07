@@ -1,3 +1,14 @@
+
+.sliders{
+  border-top:2px solid #ff9000;
+  border-bottom:2px solid #ff9000;
+  padding:10px 0 20px;
+  margin-bottom:-50px;
+clear:both;
+  height:275px;
+
+}
+
 .sliders {
 margin-top:0px;
 }
@@ -212,5 +223,22 @@ span.years{
     left:12px;
 padding:10px;
 font-size:12.5px;
+}
+}
+
+/* SLIDER SEPARATION BARS */
+
+
+
+
+
+@media only screen and (max-width:620px){
+.sliders{
+  border-top:2px solid #ff9000;
+  border-bottom:2px solid #ff9000;
+  padding:5px 0 10px;
+  margin-bottom:-35px;
+  clear:both;
+  height:485px;
 }
 }

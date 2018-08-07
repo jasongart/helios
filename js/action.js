@@ -62,15 +62,15 @@ else{
 
 function showCash(){
   if (cash.checked==true){
-      cashOption.style.backgroundColor="#ff9000";
-      monthlyOption.style.backgroundColor="#E85D1C";
+      cashOption.style.backgroundColor="#E85D1C";
+      monthlyOption.style.backgroundColor="#b25124";
       var grandCashTotal = Math.round(slider.value * yearRange.value * 1.7); //try to make 1.7 work
       total.innerHTML = grandCashTotal;
     }
 
     if (monthly.checked==true){
-        cashOption.style.backgroundColor="#E85D1C";
-        monthlyOption.style.backgroundColor="#ff9000";
+        cashOption.style.backgroundColor="#b25124";
+        monthlyOption.style.backgroundColor="#E85D1C";
       var grandCashTotal = slider.value * yearRange.value;
       total.innerHTML = grandCashTotal;}
     // console.log("cash radio pushed");

@@ -13,6 +13,14 @@ height:100%;
 
 a {transition:.2s;}
 
+.calcDiv{
+  background-color:#ff9000;
+height:2px;
+width:100%;
+margin:10px auto;
+clear:both;
+}
+
 /* ====== TOP NAV ======== */
 
 .navWrap{
@@ -255,7 +263,7 @@ text-align:center;
 width:200px;
 margin:0 auto;
 font-size:24px;
-padding:10px 3px 3px 3px;
+padding:8px 3px 0px 3px;
 border-radius:5px;
 font-family:source sans pro,arial, sans-serif;
  /*
@@ -265,6 +273,11 @@ font-family:source sans pro,arial, sans-serif;
  a.homeCTA:hover{
   background-color:#E85D1C;
 text-decoration: none;
+ }
+
+ a.homeCTA:focus{
+  outline: 0px;
+  border: 0px;
  }
 
  a.homeCTA i.fas{
@@ -301,7 +314,8 @@ font-family:source sans pro,arial, sans-serif;
 }
 
 #monthlyOption{
-  background-color:#ff9000;
+  /* background-color:#ff9000;E85D1C */
+  background-color:#E85D1C;
   transition:.4s;
 }
 
@@ -311,8 +325,9 @@ font-family:source sans pro,arial, sans-serif;
 }
 
 section.calc{
-background-color:#E85D1C;
-  height:1000px;
+/* background-color:#E85D1C; */
+background-color:#b25124;
+  height:1025px;
   min
   padding:0px;
 
@@ -333,7 +348,7 @@ background-color:#E85D1C;
 h1.calcHead{
   color:white;
 font-family:Markazi text,georgia, serif;
-  font-weight:600;
+  font-weight:100;
   text-transform:capitalize;
   text-align:center;
   max-width:800px;
@@ -484,7 +499,7 @@ span.dollarsign{font-size: 110px;}
 
 .payment{clear:both;margin-bottom:550px;}
 span.paymentType{width:100%;}
-h1.calcHead{font-size:48px; padding:15px; line-height:1em;}
+h1.calcHead{font-size:48px; padding:15px; line-height:.85em;}
 .sliderholder.left{ width:100%; float:none;}
 section.calc{ height:100%; min-height:1360px;}
 #cashOption {position:relative; left:5px;}
