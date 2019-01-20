@@ -60,7 +60,7 @@ background-color:white;
 }
 
 #topNav{
-padding:20px;
+3px 20px 10px;
 transition:.3s;
 background-color:none;
 }
@@ -105,9 +105,10 @@ top:7px;
 /* ====== CALC CONTENT ======== */
 
 section.firstSteps{ color:white;
-padding:20px;
-  height:100%;
-  min-height:800px;
+padding:5px;
+  /* height:100%; */
+  height:90%;
+  /* min-height:600px; */
   margin-bottom:-35px;
  }
 
@@ -125,35 +126,35 @@ padding:20px;
 
 #homeVideoOverlay{
 position:relative;
-  top:10%;
+  top:5%;
 }
 
-section.firstSteps h1{ color:white;
-  width:90%;
-  max-width:1200px;
-  line-height:1em;
-  letter-spacing:1px;
-  font-size:90px;
-  margin:50px auto 20px;
-  font-weight:100;
-  font-family:markazi text, georgia, serif;
-  /*
-   height:250px; */
+section.firstSteps h1{
+    color: white;
+    width: 90%;
+    max-width: 1000px;
+    line-height: 1em;
+    letter-spacing: 1px;
+    font-size: 80px;
+    margin: 50px auto 20px;
+    font-weight: 100;
+    font-family: markazi text, georgia, serif;
+    /* height: 250px; */
 }
 
 
-section.firstSteps h2{ color:white;
-width:90%;
-max-width:1200px;
-line-height:1.35em;
-letter-spacing:1px;
-font-size:48px;
-font-weight:200;
-margin:10px auto 70px;
-font-family:source sans pro,arial, sans-serif;
-text-align: center;
-/*
- height:250px; */
+section.firstSteps h2{
+    color: white;
+    width: 90%;
+    max-width: 1000px;
+    line-height: 1.3em;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: 200;
+    margin: 10px auto 70px;
+    font-family: source sans pro,arial, sans-serif;
+    text-align: center;
+    /* height: 250px; */
 }
 
 @media only screen and (max-width:800px)
@@ -227,7 +228,7 @@ margin:10px auto 70px;
 width:95%;
 line-height:1.25em;
 letter-spacing:1px;
-font-size:30px;
+font-size:24px;
 margin:10px auto 70px;
  /*
   height:250px; */
@@ -250,11 +251,12 @@ margin:10px auto 70px;
 
 
  section.firstSteps h2{ color:white;
-width:95%;
-line-height:1em;
-letter-spacing:1px;
-font-size:26px;
-margin:10px auto 70px;
+   color: white;
+   width: 95%;
+   line-height: 1.2em;
+   letter-spacing: 1px;
+   font-size: 24px;
+   margin: 10px auto 50px;
  /*
   height:250px; */
  }
@@ -277,16 +279,17 @@ text-decoration: none;
   height:250px; */
  }
 
- a.homeCTA{ color:white;
-display:block;
-background-color:#f99000;
-text-align:center;
-width:200px;
-margin:0 auto;
-font-size:24px;
-padding:8px 3px 0px 3px;
-border-radius:5px;
-font-family:source sans pro,arial, sans-serif;
+ a.homeCTA{
+   color: white;
+   display: block;
+   background-color: #f99000;
+   text-align: center;
+   width: 350px;
+   margin: 0 auto;
+   font-size: 24px;
+   padding: 8px 3px 8px 3px;
+   border-radius: 5px;
+   font-family: source sans pro,arial, sans-serif;
  /*
   height:250px; */
  }
@@ -304,6 +307,7 @@ text-decoration: none;
  a.homeCTA i.fas{
  font-size: 20px;
  transition:.3s;position:relative; top:0;
+ display:none;
   /*
    height:250px; */
   }
@@ -320,18 +324,11 @@ top:7px;
 
 @media only screen and (max-width:500px)
 {
-   a.homeCTA{ color:white;
-display:block;
-background-color:#f99000;
-text-align:center;
-width:200px;
-margin:0 auto;
-font-size:24px;
-padding:10px 4px 0px 4px;
-border-radius:5px;
-font-family:source sans pro,arial, sans-serif;
- /*
-  height:250px; */
+  a.homeCTA{
+    font-size: 20px;
+    width: 290px;
+    margin: 0 auto;
+    /* height: 250px; */
  }
 }
 
